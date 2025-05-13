@@ -1,3 +1,5 @@
+
+
 .down-main {
   background-color: #231c46;
   padding: 11px 13px;
@@ -154,6 +156,8 @@
   padding: 7px 9px;
   border-radius: 10px;
   background-color: #262352;
+  border-radius: 10px;
+background: #262352;
 }
 .bet-count-list__profile {
   display: flex;

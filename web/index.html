@@ -18,20 +18,29 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style/balance.css" />
-    <link rel="stylesheet" href="style/buy-gift.css" />
-    <link rel="stylesheet" href="style/inventory.css" />
-    <link rel="stylesheet" href="style/main.css" />
-    <link rel="stylesheet" href="style/nav-bar.css" />
+    <!-- <link rel="stylesheet" href="style/components/down-main/balance.css" /> -->
+    <link rel="stylesheet" href="style/components/down-main/buy-gift.css" />
+    <!--<link rel="stylesheet" href="style/components/down-main/inventory.css" /> -->
+    <link rel="stylesheet" href="style/components/main.css" />
+    <link rel="stylesheet" href="style/components/nav-bar.css" />
+    <!-- <link rel="stylesheet" href="style/components/down-main/btns.css"> -->
+     <link rel="stylesheet" href="style/components/down-main/balance-inventory.css">
+     <link rel="stylesheet" href="style/base/common.css">
+     <link rel="stylesheet" href="style/base/reset.css">
   </head>
   <body>
     <main>
-      <template load="partials/main.html"></template>
-      <template load="partials/balance.html"></template>
-      <template load="partials/buy-gift.html"></template>
-      <template load="partials/inventory.html"></template>
-      <template load="partials/nav-bar.html"></template>
+    <div id="main-content"></div>    
+    <div id="inventory-balance-content"></div>
+    <div id="buy-gift-content"></div>
     </main>
+
+
+
+<script src="./js/partials-loader.js"></script>
+<script src="/js/down-main.js" defer></script>
+
+
 
     <script src="js/main.js"></script>
     <script src="js/balance.js"></script>
