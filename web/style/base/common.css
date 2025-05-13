@@ -8,3 +8,6 @@ a {
 ul {
   list-style-type: none;
 }
+section {
+    max-width: 440px;
+}
