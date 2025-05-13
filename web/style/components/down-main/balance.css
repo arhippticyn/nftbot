@@ -26,8 +26,7 @@
 }
 .bal-inv__btn {
   display: flex;
-  align-items: center;
-  justify-content: start;
+
   gap: 5px;
   width: 100%;
   border-radius: 10px;
@@ -35,7 +34,7 @@
   background-color: #262352;
   font-weight: 600;
   font-size: 16px;
-  line-height: 137%;
+  line-height: 1.37;
   text-align: center;
   color: #dfdfdf;
 }
@@ -76,9 +75,10 @@
   border-radius: 20px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 137%;
+  line-height: 1.37;
   text-align: center;
   color: #fff;
+  text-transform: uppercase;
 }
 .select-bet__pages {
   background-color: #1b1636;
@@ -96,9 +96,13 @@
 .select-bet-count__btn {
   border-radius: 10px;
   background-color: #241e44;
-  padding: 9px 14px;
+  padding: 9px;
   color: #fff;
   font-size: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .select-bet-count__number {
   font-weight: 600;
@@ -106,6 +110,10 @@
   line-height: 0.92;
   text-align: center;
   color: #fff;
+}
+.select-bet-count__icon {
+  width: 25px;
+  height: 25px;
 }
 
 .select-bet-change {
@@ -166,11 +174,15 @@
   text-align: right;
   color: #fff;
 }
+.bet-count-list__avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
 
 .swiper {
   height: 300px;
 }
-
 .bet-count__swiper {
   height: 300px;
   overflow: hidden;
