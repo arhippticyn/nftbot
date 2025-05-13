@@ -87,8 +87,7 @@ position: relative;
     border-radius: 10px;
 background: linear-gradient(85deg, rgba(97, 0, 255, 0.80) -9.64%, rgba(179, 132, 255, 0.80) 72.06%);
 }
-.inventory-skins {
-}
+
 .inventory-skins__title {
     color: #FFF;
 font-family: Montserrat;
@@ -191,8 +190,7 @@ text-transform: uppercase;
 width: 200px;
 }
 
-.inventory-bid {
-}
+
 .inventory-bid__title {
     color: #BCBCBC;
 font-family: Montserrat;
@@ -201,10 +199,7 @@ font-style: normal;
 font-weight: 600;
 line-height: 22px; /* 169.231% */
 }
-.inventory-bid__title-num {
-}
-.inventory-bid-cardsBided {
-}
+
 .inventory-bid-cardsBided-card {
     display: flex;
     justify-content: space-between;
@@ -213,9 +208,7 @@ line-height: 22px; /* 169.231% */
 background: #262352;
 padding: 9px;
 }
-.inventory-bid-cardsBided-card__img {
-    
-}
+
 .inventory-bid-cardsBided-card__title {
     color: #FFF;
 font-family: Montserrat;
