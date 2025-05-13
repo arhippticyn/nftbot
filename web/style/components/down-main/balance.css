@@ -10,6 +10,7 @@
   margin-bottom: 8px;
 }
 .bet__title {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 13px;
   line-height: 1.69;
@@ -29,6 +30,7 @@
 .bal-inv__btn {
   display: flex;
 
+  font-family: "Montserrat", sans-serif;
   gap: 5px;
   width: 100%;
   border-radius: 10px;
@@ -75,6 +77,8 @@
   );
   padding: 28px 46px;
   border-radius: 20px;
+
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.37;
@@ -99,6 +103,8 @@
   border-radius: 10px;
   background-color: #241e44;
   padding: 9px;
+
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   font-size: 25px;
 
@@ -107,6 +113,7 @@
   justify-content: center;
 }
 .select-bet-count__number {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 0.92;
@@ -129,6 +136,8 @@
 .select-bet-change__btn {
   border-radius: 5px;
   background-color: #241e44;
+
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.57;
@@ -138,6 +147,7 @@
 }
 
 .bet-count__title {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 13px;
   line-height: 1.69;
@@ -166,12 +176,14 @@ background: #262352;
   gap: 16px;
 }
 .bet-count-list__username {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.37;
   color: #fff;
 }
 .bet-count-list__number {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.37;
