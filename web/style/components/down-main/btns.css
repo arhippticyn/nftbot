@@ -1,0 +1,8 @@
+
+.bet-switcher__balance,  .bet-switcher__inventory{
+    display: none;
+}
+
+.bet-switcher__balance.active, .bet-switcher__inventory.active{
+    display: block;
+}

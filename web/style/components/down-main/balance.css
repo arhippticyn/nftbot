@@ -1,3 +1,5 @@
+
+
 .down-main {
   background-color: #231c46;
   padding: 11px 13px;
@@ -8,6 +10,7 @@
   margin-bottom: 8px;
 }
 .bet__title {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 13px;
   line-height: 1.69;
@@ -26,8 +29,8 @@
 }
 .bal-inv__btn {
   display: flex;
-  align-items: center;
-  justify-content: start;
+
+  font-family: "Montserrat", sans-serif;
   gap: 5px;
   width: 100%;
   border-radius: 10px;
@@ -35,7 +38,7 @@
   background-color: #262352;
   font-weight: 600;
   font-size: 16px;
-  line-height: 137%;
+  line-height: 1.37;
   text-align: center;
   color: #dfdfdf;
 }
@@ -74,11 +77,14 @@
   );
   padding: 28px 46px;
   border-radius: 20px;
+
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 137%;
+  line-height: 1.37;
   text-align: center;
   color: #fff;
+  text-transform: uppercase;
 }
 .select-bet__pages {
   background-color: #1b1636;
@@ -96,16 +102,27 @@
 .select-bet-count__btn {
   border-radius: 10px;
   background-color: #241e44;
-  padding: 9px 14px;
+  padding: 9px;
+
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   font-size: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .select-bet-count__number {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 0.92;
   text-align: center;
   color: #fff;
+}
+.select-bet-count__icon {
+  width: 25px;
+  height: 25px;
 }
 
 .select-bet-change {
@@ -119,6 +136,8 @@
 .select-bet-change__btn {
   border-radius: 5px;
   background-color: #241e44;
+
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.57;
@@ -128,6 +147,7 @@
 }
 
 .bet-count__title {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 13px;
   line-height: 1.69;
@@ -146,6 +166,8 @@
   padding: 7px 9px;
   border-radius: 10px;
   background-color: #262352;
+  border-radius: 10px;
+background: #262352;
 }
 .bet-count-list__profile {
   display: flex;
@@ -154,23 +176,29 @@
   gap: 16px;
 }
 .bet-count-list__username {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.37;
   color: #fff;
 }
 .bet-count-list__number {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.37;
   text-align: right;
   color: #fff;
 }
+.bet-count-list__avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
 
 .swiper {
   height: 300px;
 }
-
 .bet-count__swiper {
   height: 300px;
   overflow: hidden;
