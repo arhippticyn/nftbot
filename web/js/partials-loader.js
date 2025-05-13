@@ -11,6 +11,14 @@ function loadPartial(id, url) {
 
 document.addEventListener("DOMContentLoaded", () => {
   loadPartial('main-content', 'partials/main.html');
+  loadPartial('balance-content', 'partials/balance.html');
+  loadPartial('buy-gift-content', 'partials/buy-gift.html');
+  loadPartial('inventory-content', 'partials/inventory.html');
+});
+app.use(express.static("public"))
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadPartial('main-content', 'partials/main.html');
   loadPartial('inventory-balance-content', 'partials/down-main.html');
   loadPartial('buy-gift-content', 'partials/buy-gift.html');
-});
+}); main
