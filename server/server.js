@@ -1,11 +1,25 @@
-// server/server.js
+require('dotenv').config();
 const express = require('express');
-const path = require('path');
+const { Telegraf } = require('telegraf');
+
 const app = express();
+const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 
-// Разрешаем доступ к папке 'web'
-app.use(express.static(path.join(__dirname, '../web')));
+bot.start((ctx) => ctx.reply('Бот запущен!'));
 
-app.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
+app.use(express.json());
+app.use(bot.webhookCallback('/telegram'));
+
+bot.telegram.setWebhook('https://your-project.up.railway.app/telegram');
+
+app.get('/', (req, res) => {
+    res.send('Бот работает!');
 });
+
+app.listen(process.env.PORT || 3000, () => {
+    console.log('Сервер запущен на порту', process.env.PORT || 3000);
+});
+
+if (!process.env.USE_WEBHOOK) {
+    bot.launch();
+}
