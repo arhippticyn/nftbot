@@ -1,21 +1,11 @@
-require('dotenv').config();
+// server/server.js
 const express = require('express');
-const bot = require('./bot/bot.js');
+const path = require('path');
 const app = express();
 
-const PORT = process.env.PORT || 3000;
-const WEBHOOK_URL = process.env.WEBHOOK_URL || `https://your-app.onrender.com/telegram`;
+// Разрешаем доступ к папке 'web'
+app.use(express.static(path.join(__dirname, '../web')));
 
-app.use(express.json());
-
-bot.telegram.setWebhook(WEBHOOK_URL);
-app.use(bot.webhookCallback('/telegram'));
-
-app.get('/', (req, res) => {
-    res.send("✅ Сервер работает и Webhook подключен!");
-});
-
-app.listen(PORT, () => {
-    console.log(`🚀 Сервер запущен на порту ${PORT}`);
-    console.log(`🔗 Webhook: ${WEBHOOK_URL}`);
+app.listen(3000, () => {
+  console.log('Server running on http://localhost:3000');
 });
