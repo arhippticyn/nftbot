@@ -38,6 +38,7 @@ Promise.all(fetches).then(() => {
   const scripts = [
     "js/main.js",
     "js/balance.js",
+    "js/down-main.js",
     "js/buy-gift.js",
     "js/inventory.js",
     "js/crash-game.js",
