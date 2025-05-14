@@ -1,16 +1,24 @@
 function loadPartial(id, url) {
   fetch(url)
-    .then(response => response.text())
-    .then(html => {
+    .then((response) => response.text())
+    .then((html) => {
       document.getElementById(id).innerHTML = html;
     })
-    .catch(error => {
+    .catch((error) => {
       console.error(`Ошибка загрузки ${url}:`, error);
     });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadPartial('main-content', 'partials/main.html');
-  loadPartial('inventory-balance-content', 'partials/down-main.html');
-  loadPartial('buy-gift-content', 'partials/buy-gift.html');
+  loadPartial("main-content", "partials/main.html");
+  loadPartial("balance-content", "partials/balance.html");
+  loadPartial("buy-gift-content", "partials/buy-gift.html");
+  loadPartial("inventory-content", "partials/inventory.html");
+});
+app.use(express.static("public"));
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadPartial("main-content", "partials/main.html");
+  loadPartial("inventory-balance-content", "partials/down-main.html");
+  loadPartial("buy-gift-content", "partials/buy-gift.html");
 });
